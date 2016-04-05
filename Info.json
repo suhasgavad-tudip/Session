@@ -1,0 +1,5 @@
+var stud=[
+{"firstName":"Suhas","lastName":"Gavad","rollNo":"101","subjects":"HTML"},
+{"firstName":"Sanket","lastName":"Chordiya","rollNo":"102","subjects":"Jquery"},
+{"firstName":"Vikesh","lastName":"Tonpe","rollNo":"103","subjects":"CSS"}
+]

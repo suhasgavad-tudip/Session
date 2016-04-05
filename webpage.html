@@ -1,0 +1,91 @@
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>	
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="Info.json"></script>
+	<script src="Script.js"></script>
+</head>
+	
+<body onload="StudentInfo()">
+
+<h1 align="center"> <u><b> Student </b></u> <u><b> Information</b></u> </h1>
+<div id="background">	
+
+	 <div id="menu">
+
+			<button type="button" id="AddRec">Add Record</button>
+                        <button type="button" id="DelRec">Delete Record</button>
+			<button type="button" id="updRec">Update Record</button>
+
+	</div> 
+	
+		
+	<div id="StudentDivDis">
+	</div>
+		
+	<div id="DisplayInsDelUpdate">
+	
+		<div id="StudentDivIns">
+ 
+			<header class="a"> <h1 align="center" > Add Details </h1>
+			</header>
+
+			<input type="text" name="newFirstName" id="FirstNameId" placeholder="FirstName">
+			
+			<input type="text" name="newLastName" id="LastNameId" placeholder="LastName">
+			
+			<input type="number" name="newRollNo" id="RollNoId" placeholder="RollNo">
+			
+			<input type="text" name="newSubjectName" id="SubjectName" placeholder="SubjectName">
+
+			<input type="button" onclick="addStudentInfo()" value="Add Record">
+
+		</div>
+		
+	
+		<div id="StudentDivDel">
+		
+			<header class="a"> <h1 align="center" > Delete Details Here </h1>
+			</header>
+		
+			<input type="text" name="FirstName" id="deleteByName" placeholder=" First Name ">
+			
+			<input type="button" onclick="deleteStudentInfo()" value="Delete Record">
+		
+		</div>
+		
+	
+		<div id="StudentDivUpdate">
+		
+			<header class="a"> <h1 align="center" >Update Details here </h1>
+			</header>
+			
+			<input type="text" name="FirstName" id="UpdateByName" placeholder=" First Name ">
+			
+			<input type="button" id="UpdateButton" onclick="updateStudentInfo()" value="Update Record">
+	
+		</div>
+		
+	
+		<div id="StudentUpdateFill">
+		
+			<header class="a"> <h1 align="center" >Enter New details To update </h1>
+			</header>
+			
+			<input type="text" name="FirstName" id="UpdateFirstName" placeholder="First Name">
+			
+			<input type="text" name="LastName" id="UpdateLastName" placeholder="Last Name">
+	
+			<input type="number" name="RollNo" id="UpdateRollNo" placeholder="RollNo">
+
+			<input type="text" name="SubjectName" id="UpdateSubjectName" placeholder="Subject Name">
+			
+			<input type="button" onclick="updateStudentTable()" value="Update Record">
+
+		</div>
+	</div>
+</div>
+</body>
+</html>
